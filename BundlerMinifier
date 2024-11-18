@@ -1,0 +1,21 @@
+Bundler & Minifier is broken for CSS
+Joe Davis (WEB TOOLS) [MSFT]
+Thank you for reporting this issue. The BuildBundlerMinifier tool belongs to a community-driven project on GitHub for which Microsoft does not provide support. You can file this issue at
+https://developercommunity.visualstudio.com/t/bundler-minifier-is-broken-for-css/190865
+
+
+1. Duplicate Requests and Increased Load Time
+Both the minified bundle (created by BundlerMinifier) and the original individual JavaScript files could be loaded by the browser, resulting in duplicate requests.
+This increases the load time, as the browser will download both the minified version and the individual, unminified files.
+2. Potential for Outdated Minified Files
+If you modify the original JavaScript files but forget to re-run BundlerMinifier to regenerate the bundle, the minified file could become outdated.
+This can lead to inconsistencies in the application, as the unbundled files will contain the latest changes, while the bundled minified file may still be serving an older version of the code.
+3. Debugging Difficulties
+When both minified and original files are loaded, it can become challenging to debug errors, especially if you’re switching between the two or your tooling doesn’t clearly indicate which file a particular piece of code came from.
+This is particularly problematic if the minified file does not include source maps, which are crucial for debugging minified code.
+4. Unintended JavaScript Behavior or Conflicts
+If the code inside the minified bundle and the individual files interacts or has dependencies, loading both could lead to conflicts, especially if variables or functions are redefined or executed multiple times.
+This can cause errors, unexpected behavior, or performance issues.
+5. Inconsistent Caching
+Browsers cache minified files and individual files separately. If changes are made to the individual files, users might still see the old minified file if it’s cached, leading to inconsistencies.
+You may also experience cache-busting issues if there is no versioning strategy in place, causing stale content to be served to users.
