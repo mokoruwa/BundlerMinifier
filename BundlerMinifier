@@ -1,5 +1,6 @@
 Bundler & Minifier is broken for CSS
 Joe Davis (WEB TOOLS) [MSFT]
+https://developercommunity.visualstudio.com/t/bundler-minifier-is-broken-for-css/190865
 Thank you for reporting this issue. The BuildBundlerMinifier tool belongs to a community-driven project on GitHub for which Microsoft does not provide support. You can file this issue at
 https://developercommunity.visualstudio.com/t/bundler-minifier-is-broken-for-css/190865
 
