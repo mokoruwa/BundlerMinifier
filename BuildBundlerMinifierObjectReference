@@ -1,0 +1,9 @@
+Bundler & Minifier generating "Object reference not set to an instance of an object" error
+
+https://stackoverflow.com/questions/61117675/bundler-minifier-generating-object-reference-not-set-to-an-instance-of-an-obj
+
+I trying bundle and minify my CSS and JS files in ASP.NET Core 3.0 with BuildBundlerMinifier.Core. Also Installed Bundler & Minifier extension for Visual Studio 2019.
+
+When I try Debug the project, it working correctly without error but when I rebuild it, I'm getting the following error;
+
+Object reference not set to an instance of an object
