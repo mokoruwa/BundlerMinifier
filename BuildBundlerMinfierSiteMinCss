@@ -1,0 +1,3 @@
+when I try to build I'll get this kind of compile errors for site.min.css (bundler output file):
+
+https://stackoverflow.com/questions/67535174/vs-buildbundlerminifier-compile-errors-in-site-min-css-expect-comma-found
